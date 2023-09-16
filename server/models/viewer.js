@@ -1,10 +1,9 @@
 import mongoose from "mongoose";
-const adminSchema = new mongoose.Schema(
+const viewerSchema = new mongoose.Schema(
     {
-        aishe: {
+        fullname: {
             type: String,
             required: true,
-            unique: true
         },
         email: {
             type: String,
@@ -19,18 +18,16 @@ const adminSchema = new mongoose.Schema(
         password: {
             type: String,
             required: true,
+            min : 6,
+            max : 20
         },
-        projects: {
-            type : Array,
-            default : [],
-        }
     },
     {
         timestamps: true
     },
     {
-        collection: "adminDetails"
+        collection: "viewerDetails"
     }
 );
-const Admin = mongoose.model("Admin", adminSchema);
-export default Admin;
+const Viewer = mongoose.model("Viewer", viewerSchema);
+export default Viewer;
