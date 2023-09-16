@@ -19,6 +19,8 @@ const adminSchema = new mongoose.Schema(
         password: {
             type: String,
             required: true,
+            min : 6,
+            max : 20,
         },
         projects: {
             type : Array,
