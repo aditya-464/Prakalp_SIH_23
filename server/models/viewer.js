@@ -21,6 +21,10 @@ const viewerSchema = new mongoose.Schema(
             min : 6,
             max : 20
         },
+        following : {
+            type : Array,
+            default : [],
+        }
     },
     {
         timestamps: true
