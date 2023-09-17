@@ -2,11 +2,25 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
+import authRoutes from "./routes/auth.js"
+import { dummy, signupAdmin } from "./controllers/auth.js";
 
 dotenv.config({ path: "./.env" });
 
 const app = express();
+app.use(express.json({
+    limit: "10mb",
+    extended: true
+}));
+app.use(express.urlencoded({
+    limit: "10mb",
+    extended: true
+}));
 app.use(cors());
+// app.use("/auth", authRoutes);
+
+app.post("/signup/admin", dummy,signupAdmin);
+
 
 // Starting the server and connection with database
 const PORT = process.env.PORT;
