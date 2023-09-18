@@ -17,26 +17,12 @@ export default function Navwelcome() {
           </Heading>
         </NavLink>
         <Box mr={"65px"}>
-          <NavLink to="/login">
-            <Button
-              px={"24px"}
-              py={"19px"}
-              mr={5}
-              className={styles.loginBtn}
-            >
-              <Text className={styles.btnText}>Login</Text>
-            </Button>
-          </NavLink>
-          <NavLink to="/signup">
-            <Button
-              px={"25px"}
-              py={"20px"}
-              ml={5}
-              className={styles.signupBtn}
-            >
-              <Text className={styles.btnText}>Signup</Text>
-            </Button>
-          </NavLink>
+          <Button px={"24px"} py={"19px"} mr={5} className={styles.loginBtn}>
+            <Text className={styles.btnText}>Login</Text>
+          </Button>
+          <Button px={"25px"} py={"20px"} ml={5} className={styles.signupBtn}>
+            <Text className={styles.btnText}>Signup</Text>
+          </Button>
         </Box>
       </Flex>
     </nav>
