@@ -1,11 +1,15 @@
-import { Text, Box } from "@chakra-ui/react";
+import Navwelcome from "./components/Welcome/Navwelcome/Navwelcome";
+import Adminnav from "./components/Admin/AdminNav/Adminnav";
+import Usernav from "./components/User/UserNav/Usernav";
 
 function App() {
   return (
     <>
-    <Box className="first">
-      <Text>Hello World!</Text>
-    </Box>
+      <Navwelcome />
+      {/* <br />
+      <Adminnav />
+      <br />
+      <Usernav/> */}
     </>
   );
 }
