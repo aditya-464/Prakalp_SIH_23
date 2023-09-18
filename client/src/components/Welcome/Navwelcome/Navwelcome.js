@@ -19,9 +19,8 @@ export default function Navwelcome() {
         <Box mr={"65px"}>
           <NavLink to="/login">
             <Button
-              colorScheme="seagreen"
-              px={"25px"}
-              py={"20px"}
+              px={"24px"}
+              py={"19px"}
               mr={5}
               className={styles.loginBtn}
             >
@@ -30,7 +29,6 @@ export default function Navwelcome() {
           </NavLink>
           <NavLink to="/signup">
             <Button
-              colorScheme="seagreen"
               px={"25px"}
               py={"20px"}
               ml={5}

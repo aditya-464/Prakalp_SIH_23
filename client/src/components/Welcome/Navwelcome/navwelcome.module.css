@@ -3,24 +3,22 @@
   color: white;
 }
 .loginBtn {
-    background: #03C988;
+    background: #03C988 !important;
     border: 1px solid white;
-    border-radius: 6px !important;
+    border-radius: 7px !important;
     font-size: 1.5rem;
     transition: all 0.5s ease;
-}
-.loginBtn:hover {
-    background-color: #004c33;
+    color: white !important;
 }
 .signupBtn {
-    background-color: #039363;
-    border: 1px solid white;
-    border-radius: 6px !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 7px !important;
     font-size: 1.5rem;
     transition: all 0.5s ease;
+    color: white !important;
 }
-.signupBtn:hover {
-    background-color: #004c33;
+.loginBtn:hover, .signupBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 .btnText {
     font-size: 1.5rem;
