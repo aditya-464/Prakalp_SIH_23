@@ -12,7 +12,7 @@ const theme = extendTheme({
       0: "transparent", // transparent color
       1: "#03C988", // base green color
       2: "#D9D9D9", // grey color
-      3: "#FF4162", // ;ink color
+      3: "#FF4162", // pink color
       4: "#FAFF00", // yellow color
     }
   }
