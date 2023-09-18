@@ -5,11 +5,12 @@ import Usernav from "./components/User/UserNav/Usernav";
 function App() {
   return (
     <>
-      <Navwelcome />
-      {/* <br />
-      <Adminnav />
-      <br />
-      <Usernav/> */}
+      {/* Welcome Navbar */}
+      <Navwelcome /><br />
+      {/* Admin Navbar */}
+      <Adminnav /><br />
+      {/* User Navbar */}
+      <Usernav/>
     </>
   );
 }
