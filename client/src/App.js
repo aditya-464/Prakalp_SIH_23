@@ -1,12 +1,12 @@
-import { Text, Box } from "@chakra-ui/react";
+// import { Text, Box } from "@chakra-ui/react";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navwelcome from './components/Welcome/Navwelcome/Navwelcome';
 
 function App() {
   return (
-    <>
-    <Box className="first">
-      <Text>Hello World!</Text>
-    </Box>
-    </>
+    <Router>
+      <Navwelcome/>
+    </Router>
   );
 }
 
