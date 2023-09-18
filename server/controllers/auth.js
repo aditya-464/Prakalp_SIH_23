@@ -87,7 +87,26 @@ export const signupAdmin = async (req, res) => {
 
 export const verifyOTP = async (req, res) => {
     try {
-        const { aishe, email, username, password, c_password, otp, id } = req.body;
+        const { aishe, email, username, password, otp, id } = req.body;
+        if (!otp) {
+            return res.status(400).json({ message: "Enter the OTP!" });
+        }
+        const otpData = await OTPVerification.findById(id);
+        if (!otpData) {
+            return res.status(400).json({ message: "Bad request!" });
+        }
+        const otpMatch = await bcrypt.compare(otp, otpData.code);
+        if (!otpMatch) {
+            return res.status(400).json({ message: "Invalid OTP" });
+        }
+
+        const salt = await bcrypt.genSalt(11);
+        const hashedPassword = await bcrypt.hash(password, salt);
+        const newAdmin = new Admin({
+            aishe, email, username, password: hashedPassword
+        });
+        const savedNewAdmin = await newAdmin.save();
+        return res.status(200).json({savedNewAdmin});
 
     } catch (error) {
         return res.status(500).json({ message: error.message });
