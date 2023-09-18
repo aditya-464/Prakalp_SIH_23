@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <Navwelcome />
-      {/* <br />
+      <br />
       <Adminnav />
       <br />
-      <Usernav/> */}
+      <Usernav/>
     </>
   );
 }

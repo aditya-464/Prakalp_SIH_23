@@ -17,7 +17,7 @@ export default function Navwelcome() {
           </Heading>
         </NavLink>
         <Box mr={"65px"}>
-          <Button bg="prakalp.0" height={"40px"} width={40} mr={5} className={styles.loginBtn}>
+          <Button bg="prakalp.0" height={"39px"} width={40} mr={5} className={styles.loginBtn}>
             <Text className={styles.btnText}>Login</Text>
           </Button>
           <Button height={"40px"} width={40} ml={5} className={styles.signupBtn}>

@@ -11,16 +11,16 @@ export default function Navwelcome() {
           <Heading
             as={"h1"}
             ml={"65px"}
-            style={{ fontWeight: "500", letterSpacing: "1px" }}
+            style={{ fontWeight: "400", letterSpacing: "1px", fontFamily: "'Poppins', sans-serif" }}
           >
             Prakalp
           </Heading>
         </NavLink>
         <Box mr={"65px"}>
-          <Button bg="prakalp.0" px={"24px"} py={"19px"} mr={5} className={styles.loginBtn}>
+          <Button bg="prakalp.0" height={"40px"} width={40} mr={5} className={styles.loginBtn}>
             <Text className={styles.btnText}>Login</Text>
           </Button>
-          <Button px={"25px"} py={"20px"} ml={5} className={styles.signupBtn}>
+          <Button height={"40px"} width={40} ml={5} className={styles.signupBtn}>
             <Text className={styles.btnText}>Signup</Text>
           </Button>
         </Box>
