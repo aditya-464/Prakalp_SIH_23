@@ -6,6 +6,11 @@ const adminSchema = new mongoose.Schema(
             required: true,
             unique: true
         },
+        inst_name: {
+            type: String,
+            required: true,
+            unique: true
+        },
         email: {
             type: String,
             required: true,
@@ -19,12 +24,12 @@ const adminSchema = new mongoose.Schema(
         password: {
             type: String,
             required: true,
-            min : 6,
-            max : 20,
+            min: 6,
+            max: 20,
         },
         projects: {
-            type : Array,
-            default : [],
+            type: Array,
+            default: [],
         }
     },
     {

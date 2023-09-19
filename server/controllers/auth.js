@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import OTPVerification from "../models/otpverification.js";
 import Admin from "../models/admin.js";
-import CryptoJS from "crypto-js";
+import { encryptData, decryptData } from "../utils/encryption.js";
 
 const otpGenerateFunc = async (email) => {
     let val = Math.floor(Math.random() * 899999 + 100000);
@@ -73,23 +73,13 @@ const otpGenerateFunc = async (email) => {
     })
     return data;
 }
-const encryptData = (data) => {
-    const ciphertext = CryptoJS.AES.encrypt(data, process.env.CRYPTO_SECRET_KEY).toString();
-    return ciphertext;
-}
-const decryptData = (data) => {
-    const bytes = CryptoJS.AES.decrypt(data, process.env.CRYPTO_SECRET_KEY);
-    const originalText = bytes.toString(CryptoJS.enc.Utf8);
-    return originalText;
-}
-
 
 // Admin
 export const signupAdmin = async (req, res) => {
     try {
-        const { aishe, email, username, password, c_password } = req.body;
+        const { aishe, inst_name, email, username, password, c_password } = req.body;
 
-        if (!aishe || !email || !username || !password || !c_password) {
+        if (!aishe || !inst_name || !email || !username || !password || !c_password) {
             return res.status(400).json({ message: "Please fill up all fields!" });
         }
         const prevEmail = await Admin.findOne({ email: email });
@@ -105,8 +95,10 @@ export const signupAdmin = async (req, res) => {
         }
 
         const data = await otpGenerateFunc(email);
+        const encryptedId = encryptData(data.id);
+
         if (data.sent === true) {
-            return res.status(200).json({ message: data.message, id: data.id });
+            return res.status(200).json({ id: encryptedId });
         }
         else {
             return res.status(400).json({ message: data.message });
@@ -124,7 +116,9 @@ export const verifyOTPAdmin = async (req, res) => {
         if (!otp) {
             return res.status(400).json({ message: "Enter the OTP!" });
         }
-        const otpData = await OTPVerification.findById(id);
+
+        const decryptedId = decryptData(id);
+        const otpData = await OTPVerification.findById(decryptedId);
         if (!otpData) {
             return res.status(400).json({ message: "Bad request!" });
         }
@@ -133,9 +127,9 @@ export const verifyOTPAdmin = async (req, res) => {
             return res.status(400).json({ message: "Invalid OTP" });
         }
 
-        const idExist = await OTPVerification.findById(id);
+        const idExist = await OTPVerification.findById(decryptedId);
         if (idExist) {
-            await OTPVerification.deleteOne({ _id: id });
+            await OTPVerification.deleteOne({ _id: decryptedId });
         }
         const salt = await bcrypt.genSalt(11);
         const hashedPassword = await bcrypt.hash(password, salt);
@@ -155,14 +149,16 @@ export const verifyOTPAdmin = async (req, res) => {
 export const resendOTP = async (req, res) => {
     try {
         const { id, email } = req.body;
-        const idExist = await OTPVerification.findById(id);
+        const decryptedId = decryptData(id);
+        const idExist = await OTPVerification.findById(decryptedId);
         if (idExist) {
-            await OTPVerification.deleteOne({ _id: id });
+            await OTPVerification.deleteOne({ _id: decryptedId });
         }
 
         const data = await otpGenerateFunc(email);
+        const encryptedId = encryptData(data.id);
         if (data.sent === true) {
-            return res.status(200).json({ message: data.message, id: data.id });
+            return res.status(200).json({ id: encryptedId });
         }
         else {
             return res.status(400).json({ message: data.message });
@@ -190,8 +186,9 @@ export const loginAdmin = async (req, res) => {
         }
 
         const data = await otpGenerateFunc(userExist.email);
+        const encryptedId = encryptData(data.id);
         if (data.sent === true) {
-            return res.status(200).json({ message: data.message, id: data.id });
+            return res.status(200).json({ id: encryptedId });
         }
         else {
             return res.status(400).json({ message: data.message });
@@ -208,7 +205,8 @@ export const verifyOTPLogin = async (req, res) => {
         if (!otp) {
             return res.status(400).json({ message: "Enter the OTP!" });
         }
-        const otpData = await OTPVerification.findById(id);
+        const decryptedId = decryptData(id);
+        const otpData = await OTPVerification.findById(decryptedId);
         if (!otpData) {
             return res.status(400).json({ message: "Bad request!" });
         }
@@ -217,9 +215,9 @@ export const verifyOTPLogin = async (req, res) => {
             return res.status(400).json({ message: "Invalid OTP" });
         }
 
-        const idExist = await OTPVerification.findById(id);
+        const idExist = await OTPVerification.findById(decryptedId);
         if (idExist) {
-            await OTPVerification.deleteOne({ _id: id });
+            await OTPVerification.deleteOne({ _id: decryptedId });
         }
         const admin = await Admin.find({ username: username });
         const token = jwt.sign({ id: admin._id }, process.env.JWT_KEY);
@@ -233,4 +231,3 @@ export const verifyOTPLogin = async (req, res) => {
 
 
 // Viewer
-
