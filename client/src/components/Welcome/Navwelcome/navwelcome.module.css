@@ -18,7 +18,7 @@
     color: white !important;
 }
 .loginBtn:hover, .signupBtn:hover {
-    background-color: #D9D9D9;
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 .btnText {
     font-size: 1.5rem;

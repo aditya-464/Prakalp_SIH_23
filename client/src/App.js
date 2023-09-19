@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       {/* Welcome Navbar */}
-      {/* <Navwelcome /> */}
+      <Navwelcome />
       {/* Admin Navbar */}
       <Adminnav />
-      <Heroadmin/>
-      <Switchbutton/>
+      {/* <Heroadmin/>
+      <Switchbutton/> */}
       {/* User Navbar */}
-      {/* <Usernav/> */}
+      <Usernav/>
     </>
   );
 }
