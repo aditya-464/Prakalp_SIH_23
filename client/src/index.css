@@ -20,7 +20,7 @@ html {
 }
 
 .active > p {
-  font-weight: 600 !important;
+  color: #D9D9D9;
 }
 /* 
 Hero section background - 
