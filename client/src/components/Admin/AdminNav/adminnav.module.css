@@ -21,7 +21,7 @@
   letter-spacing: 1px;
   font-weight: 500 !important;
 }
-.navItem {
+/* .navItem {
   display: inline-block;
   position: relative;
 }
@@ -35,7 +35,6 @@
   bottom: -0.2rem;
   left: 0;
   background-color: white;
-  /* background-color: red; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -43,4 +42,31 @@
 .navItem:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+} */
+.navItem {
+  text-decoration: none;
+  color: #D9D9D9;
+  padding: 15px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+}
+.navItem:before {
+  transition: 300ms;
+  height: 2.5px;
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.navItem:hover {
+  color: white;
+}
+.navItem::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.navItem:hover::before {
+  width: 100%;
 }
