@@ -36,7 +36,10 @@ html {
 } */
 
 .active > p {
-  font-weight: 600 !important;
+  padding-bottom: 0.18rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  width: fit-content;
 }
 /* 
 Hero section background - 

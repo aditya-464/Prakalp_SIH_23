@@ -32,10 +32,10 @@
   width: 100%;
   transform: scaleX(0);
   height: 0.2rem;
-  /* top: 0.2rem; */
-  bottom: -0.3rem;
+  bottom: -0.2rem;
   left: 0;
-  background-color: #D9D9D9;
+  background-color: white;
+  /* background-color: red; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
