@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import authRoutes from "./routes/auth.js"
-import { dummy, signupAdmin } from "./controllers/auth.js";
+import { resendOTP, signupAdmin } from "./controllers/auth.js";
 
 dotenv.config({ path: "./.env" });
 
@@ -19,7 +19,9 @@ app.use(express.urlencoded({
 app.use(cors());
 // app.use("/auth", authRoutes);
 
-app.post("/signup/admin", dummy,signupAdmin);
+app.post("/signup/admin",signupAdmin);
+app.patch("/resendOTP", resendOTP);
+
 
 
 // Starting the server and connection with database
