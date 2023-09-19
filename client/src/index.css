@@ -34,11 +34,9 @@ html {
 /* .active {
   transition: all 1s ease-in-out;
 } */
+
 .active > p {
-  padding-bottom: 2px;
-  border-bottom-style: solid;
-  border-bottom-width: 0.2rem;
-  width: fit-content;
+  font-weight: 600 !important;
 }
 /* 
 Hero section background - 
