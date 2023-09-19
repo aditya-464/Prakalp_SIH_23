@@ -10,8 +10,8 @@ function App() {
       {/* <Navwelcome /> */}
 
 
-      {/* <Usernav/>
-      <Herouser/> */}
+      <Usernav/>
+      <Herouser/>
 
 
       {/* <Adminnav />
