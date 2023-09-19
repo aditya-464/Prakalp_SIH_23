@@ -15,8 +15,13 @@ const theme = extendTheme({
       3: "#FF4162", // pink color
       4: "#FAFF00", // yellow color
     }
-  }
+  },
+  fonts: {
+    body: 'Poppins, sans-serif',
+    heading: 'Poppins, sans-serif',
+  },
 });
+
 root.render(
   <React.StrictMode>
     <Router>
