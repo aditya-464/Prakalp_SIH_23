@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./adminnav.module.css";
-import { Text, Button, Flex, Heading, Box } from "@chakra-ui/react";
+import { Text, Button, Flex, Heading, Box, HStack } from "@chakra-ui/react";
 
 export default function Navwelcome() {
   return (
     <nav className={styles.navBackground}>
-      <Flex alignItems={"center"} justifyContent={"space-between"} py={15}>
+      <Flex alignItems={"center"} justifyContent={"space-between"} py={23}>
         <NavLink to="/">
           <Heading
             as={"h1"}
@@ -16,14 +16,17 @@ export default function Navwelcome() {
             Prakalp
           </Heading>
         </NavLink>
-        <Box mr={"65px"}>
-          <Button bg="prakalp.0" height={"40px"} width={40} mr={5} className={styles.loginBtn}>
-            <Text className={styles.btnText}>Login</Text>
-          </Button>
-          <Button height={"40px"} width={40} ml={5} className={styles.signupBtn}>
-            <Text className={styles.btnText}>Signup</Text>
-          </Button>
-        </Box>
+        <HStack mr={"60px"}>
+          <NavLink to="/">
+            <Text className={styles.navText} mx={15}>Home</Text>
+          </NavLink>
+          <NavLink to="/about">
+            <Text className={styles.navText} mx={15}>About</Text>
+          </NavLink>
+          <NavLink to="/account">
+            <Text className={styles.navText} mx={15}>Account</Text>
+          </NavLink>
+        </HStack>
       </Flex>
     </nav>
   );
