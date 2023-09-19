@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, FormControl, FormLabel, GridItem, SimpleGrid, Select, Input, Textarea, HStack, Button } from '@chakra-ui/react';
+import { FormControl, FormLabel, GridItem, SimpleGrid, Select, Input, HStack, Button } from '@chakra-ui/react';
 
 export const ViewProject = () => {
     return (
@@ -51,7 +51,7 @@ export const ViewProject = () => {
                             <option value='option1'>1st Year</option>
                             <option value='option2'>2nd Year</option>
                             <option value='option3'>3rd Year</option>
-                            <option value='option3'>4th Year</option>
+                            <option value='option4'>4th Year</option>
                         </Select>
                     </FormControl>
                 </GridItem>

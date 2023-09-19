@@ -1,6 +1,6 @@
 import React from 'react'
 import Adminnav from "../components/Admin/AdminNav/Adminnav";
-// import { Heroadmin } from '../components/Admin/HeroAdmin/Heroadmin';
+import Heroadmin from '../components/Admin/HeroAdmin/Heroadmin';
 import { AddProject } from '../components/Admin/AddProject';
 import { Box, Button, ButtonGroup, Flex } from '@chakra-ui/react';
 import { ViewProject } from '../components/Admin/ViewProject';
@@ -26,8 +26,8 @@ export const HomeAdmin = () => {
     <>
       <Box className='HomeAdmin' height={'100vh'} overflow={'hidden'} >
         <Adminnav />
-        {/* <Heroadmin /> */}
-        <Box sx={styles.scrollbar} px={'65px'} py={'15px'} style={{ overflowY: 'scroll', height: 'calc(100% - 187px)' }}>
+        <Heroadmin />
+        <Box sx={styles.scrollbar} px={'65px'} py={'15px'} style={{ overflowY: 'scroll', height: 'calc(100% - 230px)' }}>
           <Flex my={'25px'} justify={'center'} align={'center'} >
             <ButtonGroup spacing={0}>
               <Button onClick={() => {
