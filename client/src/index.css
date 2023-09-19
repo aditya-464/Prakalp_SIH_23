@@ -37,7 +37,7 @@ html {
 .active > p {
   padding-bottom: 2px;
   border-bottom-style: solid;
-  border-bottom-width: 1.5px;
+  border-bottom-width: 0.2rem;
   width: fit-content;
 }
 /* 
