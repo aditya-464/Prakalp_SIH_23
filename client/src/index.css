@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
@@ -8,18 +8,38 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .first {
   width: 100vw;
   height: 100vh;
-  /* background: linear-gradient(276.58deg, #03C988 0%, rgba(4, 176, 128, 0.904683) 63.02%, rgba(4, 170, 127, 0.883512) 96.35%, rgba(4, 170, 126, 0.881235) 99.94%, rgba(4, 136, 116, 0.753648) 99.95%, rgba(5, 135, 116, 0.750288) 99.96%, rgba(4, 148, 120, 0.799034) 99.97%, rgba(7, 46, 88, 0.415426) 99.98%, rgba(7, 32, 84, 0.363541) 99.99%, rgba(7, 25, 82, 0.335869) 100%, rgba(255, 255, 255, 0) 100%); */
-  /* color: white; */
-  /* font-size: 16px; */
+  background: linear-gradient(276.58deg,
+      #03c988 0%,
+      rgba(4, 176, 128, 0.904683) 63.02%,
+      rgba(4, 170, 127, 0.883512) 96.35%,
+      rgba(4, 170, 126, 0.881235) 99.94%,
+      rgba(4, 136, 116, 0.753648) 99.95%,
+      rgba(5, 135, 116, 0.750288) 99.96%,
+      rgba(4, 148, 120, 0.799034) 99.97%,
+      rgba(7, 46, 88, 0.415426) 99.98%,
+      rgba(7, 32, 84, 0.363541) 99.99%,
+      rgba(7, 25, 82, 0.335869) 100%,
+      rgba(255, 255, 255, 0) 100%);
+  color: white;
+  font-size: 72px;
 }
 
+.active>p {
+  color: white !important;
+}
 
+/* .active > p {
+  padding-bottom: 0.18rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  width: fit-content;
+} */
 /* 
 Hero section background - 
 background: linear-gradient(276.58deg, #03C988 0%, rgba(4, 176, 128, 0.904683) 63.02%, rgba(4, 170, 127, 0.883512) 96.35%, rgba(4, 170, 126, 0.881235) 99.94%, rgba(4, 136, 116, 0.753648) 99.95%, rgba(5, 135, 116, 0.750288) 99.96%, rgba(4, 148, 120, 0.799034) 99.97%, rgba(7, 46, 88, 0.415426) 99.98%, rgba(7, 32, 84, 0.363541) 99.99%, rgba(7, 25, 82, 0.335869) 100%, rgba(255, 255, 255, 0) 100%); 

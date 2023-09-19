@@ -6,11 +6,7 @@ import { Text, Button, Flex, Heading, Box, HStack } from "@chakra-ui/react";
 export default function Navwelcome() {
   return (
     <nav className={styles.navBackground}>
-      <Flex
-        alignItems={"center"}
-        justifyContent={"space-between"}
-        py={15}
-      >
+      <Flex alignItems={"center"} justifyContent={"space-between"} py={23}>
         <NavLink to="/">
           <Heading
             as={"h1"}
@@ -24,22 +20,17 @@ export default function Navwelcome() {
             Prakalp
           </Heading>
         </NavLink>
-        <HStack
-          mr={65}
-          fontSize={"2xl"}
-          spacing={12}
-        >
+        <HStack mr={"60px"}>
           <NavLink to="/">
-            <Box>Home</Box>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Home</Text>
           </NavLink>
-          <NavLink to="/">
-            <Box>About</Box>
+          <NavLink to="/about">
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>About</Text>
           </NavLink>
-          <NavLink to="/">
-            <Box>Account</Box>
+          <NavLink to="/account">
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Account</Text>
           </NavLink>
         </HStack>
-
       </Flex>
     </nav>
   );
