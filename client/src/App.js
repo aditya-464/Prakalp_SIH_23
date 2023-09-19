@@ -5,13 +5,14 @@ import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 import Herouser from "./components/User/HeroUser/Herouser";
 
 function App() {
+  const name = "Aditya"
   return (
     <>
       {/* <Navwelcome /> */}
 
 
       <Usernav/>
-      <Herouser/>
+      <Herouser name={name}/>
 
 
       {/* <Adminnav />
