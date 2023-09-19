@@ -18,16 +18,16 @@ export default function Navwelcome() {
         </NavLink>
         <HStack mr={"60px"}>
           <NavLink to="/">
-            <Text className={styles.navText} mx={15}>Home</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Home</Text>
           </NavLink>
           <NavLink to="/about">
-            <Text className={styles.navText} mx={15}>About</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>About</Text>
           </NavLink>
           <NavLink to="/workspace">
-            <Text className={styles.navText} mx={15}>Workspace</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Workspace</Text>
           </NavLink>
           <NavLink to="/account">
-            <Text className={styles.navText} mx={15}>Account</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Account</Text>
           </NavLink>
         </HStack>
       </Flex>

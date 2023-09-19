@@ -21,6 +21,25 @@
   letter-spacing: 1px;
   font-weight: 500 !important;
 }
-.navText:hover {
-  color: #D9D9D9 !important;
+.navItem {
+  display: inline-block;
+  position: relative;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.2rem;
+  bottom: -0.3rem;
+  left: 0;
+  background-color: #D9D9D9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navItem:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
