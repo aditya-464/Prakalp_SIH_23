@@ -1,16 +1,18 @@
 import Navwelcome from "./components/Welcome/Navwelcome/Navwelcome";
 import Adminnav from "./components/Admin/AdminNav/Adminnav";
 import Usernav from "./components/User/UserNav/Usernav";
+import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 
 function App() {
   return (
     <>
       {/* Welcome Navbar */}
-      <Navwelcome /><br />
+      {/* <Navwelcome /> */}
       {/* Admin Navbar */}
-      <Adminnav /><br />
+      <Adminnav />
+      <Heroadmin/>
       {/* User Navbar */}
-      <Usernav/>
+      {/* <Usernav/> */}
     </>
   );
 }
