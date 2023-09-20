@@ -10,11 +10,9 @@ export default function Largebtn() {
 
   const [button, setButton] = useState("btn1");
   const handleLeftBtn = (e) => {
-    e.preventDefault();
     setButton("btn1");
   };
   const handleRightBtn = (e) => {
-    e.preventDefault();
     setButton("btn2");
   };
   return (
