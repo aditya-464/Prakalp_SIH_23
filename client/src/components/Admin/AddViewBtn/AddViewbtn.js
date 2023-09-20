@@ -28,8 +28,15 @@ export default function Largebtn() {
           className={styles.btn}
           style={{ left: button === "btn1" ? "0" : "181px" }}
         ></div>
+<<<<<<< HEAD
         <Button onClick={() => {
           navigate("/"); handleLeftBtn();
+=======
+        <Button onClick={(e) => {
+          e.preventDefault();
+          handleLeftBtn();
+          props.setShowView(prev => !prev);
+>>>>>>> 20cb3572f34a858570a5229362d01c7fe898c9a4
         }}
           bg={"prakalp.0"}
           color={button === "btn1" ? "white" : "black"}
@@ -50,6 +57,10 @@ export default function Largebtn() {
         <Button onClick={() => {
           navigate("/viewProject");
           handleRightBtn();
+<<<<<<< HEAD
+=======
+          props.setShowView(prev => !prev);
+>>>>>>> 20cb3572f34a858570a5229362d01c7fe898c9a4
         }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
