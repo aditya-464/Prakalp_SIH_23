@@ -6,7 +6,7 @@ import { Text, Flex, Heading, HStack } from "@chakra-ui/react";
 export default function Navwelcome() {
   return (
     <nav className={styles.navBackground}>
-      <Flex alignItems={"center"} justifyContent={"space-between"} py={23}>
+      <Flex alignItems={"center"} justifyContent={"space-between"} py={7}>
         <NavLink to="/">
           <Heading
             as={"h1"}
