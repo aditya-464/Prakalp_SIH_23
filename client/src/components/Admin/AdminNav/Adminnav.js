@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./adminnav.module.css";
-import { Text, Button, Flex, Heading, Box, HStack } from "@chakra-ui/react";
+import { Text, Flex, Heading, HStack } from "@chakra-ui/react";
 
 export default function Navwelcome() {
   return (
@@ -15,6 +15,7 @@ export default function Navwelcome() {
               fontWeight: "400",
               letterSpacing: "1px",
               fontFamily: "'Poppins', sans-serif",
+              textShadow: "0 0 3px white",
             }}
           >
             Prakalp
@@ -22,13 +23,19 @@ export default function Navwelcome() {
         </NavLink>
         <HStack mr={"60px"}>
           <NavLink to="/">
-            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Home</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>
+              Home
+            </Text>
           </NavLink>
           <NavLink to="/about">
-            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>About</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>
+              About
+            </Text>
           </NavLink>
           <NavLink to="/account">
-            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>Account</Text>
+            <Text className={`${styles.navText} ${styles.navItem}`} mx={15}>
+              Account
+            </Text>
           </NavLink>
         </HStack>
       </Flex>

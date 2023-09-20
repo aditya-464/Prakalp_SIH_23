@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./herouser.module.css";
 import { Box, Text } from "@chakra-ui/react";
 
-export default function Herouser() {
+export default function Herouser({name}) {
   return (
     <Box className={styles.heroBackground}>
       <Box pt={8}>
@@ -13,7 +13,7 @@ export default function Herouser() {
           className={styles.heroHeadText}
           pb={8}
         >
-          Hello User!
+          Hello {name}!
         </Text>
       </Box>
       <Box pb={20}>

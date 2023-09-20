@@ -5,8 +5,10 @@ import { HomeAdmin } from "./pages/HomeAdmin";
 import { Box } from '@chakra-ui/react';
 import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 import Herouser from "./components/User/HeroUser/Herouser";
+import Largebtn from "./components/LargeButton/Largebtn";
 
 function App() {
+  const name = "Aditya"
   return (
     <>
       <HomeAdmin />
@@ -15,14 +17,19 @@ function App() {
       <br />
       <Usernav/> */}
       {/* <Navwelcome /> */}
+      {/* <Usernav/> */}
+      <Adminnav />
 
 
       {/* <Usernav/>
       <Herouser/> */}
+      <Heroadmin />
+      {/* <Herouser name={name}/> */}
 
 
-      {/* <Adminnav />
-      <Heroadmin/> */}
+      <Largebtn />
+
+
     </>
   );
 }
