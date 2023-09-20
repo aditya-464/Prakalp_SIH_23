@@ -1,29 +1,36 @@
 .buttonContainer {
-	position: relative;
-	border-radius: 30px;
+  position: relative;
+  border-radius: 30px;
 }
 
-.leftBtn, .rightBtn {
-    font-size: 2rem !important;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1.5px !important;
-	padding: 30px 40px !important;
-	border: 0 !important;
-    border-radius: 30px !important;
-	outline: none !important;
-	position: relative;
-	text-align: center;
+.leftBtn,
+.rightBtn {
+  font-size: 2rem !important;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.5px !important;
+  padding: 30px 40px !important;
+  border: 0 !important;
+  border-radius: 30px !important;
+  outline: none !important;
+  position: relative;
+  text-align: center;
 }
-.leftBtn:hover, .rightBtn:hover {
-    background-color: transparent !important;
+.leftBtn:hover,
+.rightBtn:hover {
+  background-color: transparent !important;
+}
+.leftBtn:focus-within,
+.rightBtn:focus-within {
+  outline: none !important;
+  box-shadow: none !important;
 }
 .btn {
-	left: 0;
-	top: 0;
-	position: absolute;
-	width: 180px;
-	height: 100%;
-	background: black;
-	border-radius: 30px;
-	transition: 0.5s;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  background: black;
+  border-radius: 30px;
+  transition: 0.5s;
 }

@@ -10,15 +10,17 @@ function App() {
   return (
     <>
       {/* <Navwelcome /> */}
+      {/* <Usernav/> */}
+      <Adminnav />
 
 
-      <Usernav/>
-      <Herouser name={name}/>
+      <Heroadmin/>
+      {/* <Herouser name={name}/> */}
+
+
       <Largebtn/>
 
 
-      {/* <Adminnav />
-      <Heroadmin/> */}
     </>
   );
 }
