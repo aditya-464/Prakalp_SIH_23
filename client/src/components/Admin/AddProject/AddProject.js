@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, FormControl, FormLabel, GridItem, SimpleGrid, Select, Input, Textarea, HStack, Button } from '@chakra-ui/react';
+import { Box, FormControl, FormLabel, GridItem, SimpleGrid, Select, Input, Textarea, HStack, Button, Flex } from '@chakra-ui/react';
 
 export const AddProject = () => {
 
@@ -12,7 +12,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Course
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
                                 <option value='option3'>Option 3</option>
@@ -25,7 +25,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Stream
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Computer Science</option>
                                 <option value='option2'>Electronics and Communication Engineering</option>
                                 <option value='option3'>Information Technology</option>
@@ -39,7 +39,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Project Type
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Individual Project</option>
                                 <option value='option2'>Group Project</option>
                             </Select>
@@ -51,7 +51,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Year
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>1st Year</option>
                                 <option value='option2'>2nd Year</option>
                                 <option value='option3'>3rd Year</option>
@@ -65,7 +65,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Student Name
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
+                            <Input placeholder='Type' bg={'prakalp.2'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
@@ -74,7 +74,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 University Roll
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
+                            <Input placeholder='Type' bg={'prakalp.2'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
@@ -83,7 +83,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Title
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
+                            <Input placeholder='Type' bg={'prakalp.2'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
@@ -92,7 +92,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Link
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
+                            <Input placeholder='Type' bg={'prakalp.2'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
@@ -101,7 +101,7 @@ export const AddProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Description
                             </FormLabel>
-                            <Textarea h={'12rem'} placeholder='Type Description' bg={'gray.200'} variant={'Unstyled'} fontSize={'1.5rem'} resize={'none'}
+                            <Textarea h={'12rem'} placeholder='Type Description' bg={'prakalp.2'} variant={'Unstyled'} fontSize={'1.5rem'} resize={'none'}
                                 sx={{
                                     '&::-webkit-scrollbar': {
                                         display: 'none'
@@ -118,9 +118,9 @@ export const AddProject = () => {
                             <Input type='file' id="file"
                                 style={{ display: "none" }} />
                             <label htmlFor='file'>
-                                <Box h={'12rem'} p={'5px 10px'} fontSize={'1.5rem'} borderRadius={'0.375rem'} style={{ border: "dotted 1px gray" }}  >
+                                <Flex h={'12rem'} p={'5px 10px'} fontSize={'1.5rem'} borderRadius={'0.375rem'} style={{ border: "dotted 2px gray" }} alignItems={'center'} justifyContent={'center'} >
                                     Select or drag file
-                                </Box>
+                                </Flex>
                             </label>
                         </FormControl>
                     </GridItem>

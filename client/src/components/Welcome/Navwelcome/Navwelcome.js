@@ -15,7 +15,6 @@ export default function Navwelcome() {
               fontWeight: "400",
               letterSpacing: "1px",
               fontFamily: "'Poppins', sans-serif",
-              textShadow: "0 0 3px white",
             }}
           >
             Prakalp

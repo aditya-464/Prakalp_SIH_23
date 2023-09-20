@@ -12,7 +12,7 @@ export const ViewProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Title
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
+                            <Input placeholder='Type' bg={'prakalp.2'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
@@ -21,7 +21,7 @@ export const ViewProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Course
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
                                 <option value='option3'>Option 3</option>
@@ -34,7 +34,7 @@ export const ViewProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Stream
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Computer Science</option>
                                 <option value='option2'>Electronics and Communication Engineering</option>
                                 <option value='option3'>Information Technology</option>
@@ -47,7 +47,7 @@ export const ViewProject = () => {
                             <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Year
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
+                            <Select bg={'prakalp.2'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option0'>All</option>
                                 <option value='option1'>1st Year</option>
                                 <option value='option2'>2nd Year</option>
