@@ -3,6 +3,7 @@ import Adminnav from "./components/Admin/AdminNav/Adminnav";
 import Usernav from "./components/User/UserNav/Usernav";
 import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 import Herouser from "./components/User/HeroUser/Herouser";
+import Largebtn from "./components/LargeButton/Largebtn";
 
 function App() {
   const name = "Aditya"
@@ -13,6 +14,7 @@ function App() {
 
       <Usernav/>
       <Herouser name={name}/>
+      <Largebtn/>
 
 
       {/* <Adminnav />
