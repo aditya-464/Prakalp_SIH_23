@@ -4,7 +4,6 @@ import Usernav from "./components/User/UserNav/Usernav";
 import { HomeAdmin } from "./pages/HomeAdmin";
 import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 import Herouser from "./components/User/HeroUser/Herouser";
-import Largebtn from "./components/LargeButton/Largebtn";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
       {/* <Heroadmin /> */}
       {/* <Herouser name={name}/> */}
 
-      {/* <Largebtn /> */}
 
     </>
   );

@@ -3,16 +3,16 @@ import styles from "./largebtn.module.css";
 import { Button, ButtonGroup, Flex, Text } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 import { FaEye } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function Largebtn() {
   const navigate = useNavigate();
 
   const [button, setButton] = useState("btn1");
-  const handleLeftBtn = (e) => {
+  const handleLeftBtn = () => {
     setButton("btn1");
   };
-  const handleRightBtn = (e) => {
+  const handleRightBtn = () => {
     setButton("btn2");
   };
   return (
@@ -28,18 +28,16 @@ export default function Largebtn() {
           className={styles.btn}
           style={{ left: button === "btn1" ? "0" : "181px" }}
         ></div>
-        <Button
-          onClick={() => {
-            navigate("/");
-            handleLeftBtn();
-          }}
+        <Button onClick={() => {
+          navigate("/"); handleLeftBtn();
+        }}
           bg={"prakalp.0"}
           color={button === "btn1" ? "white" : "black"}
           leftIcon={
             <AddIcon
               style={{
                 stroke: button === "btn1" ? "white" : "black",
-                strokeWidth: "2",
+                strokeWidth: "1",
               }}
             />
           }
@@ -49,11 +47,10 @@ export default function Largebtn() {
         >
           <Text mx={5}>Add</Text>
         </Button>
-        <Button
-          onClick={() => {
-            navigate("/viewProject");
-            handleRightBtn();
-          }}
+        <Button onClick={() => {
+          navigate("/viewProject");
+          handleRightBtn();
+        }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
           leftIcon={<FaEye size={25} />}
