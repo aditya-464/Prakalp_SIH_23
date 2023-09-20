@@ -126,7 +126,7 @@ export const AddProject = () => {
                     </GridItem>
 
                 </SimpleGrid>
-                <HStack my={'5rem'} justify={'center'}  >
+                <HStack my={'5rem'} justify={'flex-end'}  >
                     <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.25rem'} variant={'solid'} background={'prakalp.1'} >PUBLISH</Button>
                 </HStack >
             </Box>
