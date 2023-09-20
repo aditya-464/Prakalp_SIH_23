@@ -58,7 +58,7 @@ export const ViewProject = () => {
                     </GridItem>
 
                 </SimpleGrid>
-                <HStack my={'5rem'} justify={'flex-end'}  >
+                <HStack mt={'5rem'} justify={'flex-end'}  >
                     <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.5rem'} variant={'solid'} background={'prakalp.1'} >Search</Button>
                 </HStack >
             </Box>
