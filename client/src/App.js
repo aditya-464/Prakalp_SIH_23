@@ -20,8 +20,6 @@ function App() {
       <Herouser/> */}
       {/* <Heroadmin /> */}
       {/* <Herouser name={name}/> */}
-
-
     </>
   );
 }

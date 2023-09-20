@@ -5,6 +5,7 @@ import { AddProject } from '../../components/Admin/AddProject/AddProject';
 import { Box } from '@chakra-ui/react';
 import { ViewProject } from '../../components/Admin/ViewProject/ViewProject';
 import AddViewbtn from '../../components/Admin/AddViewBtn/AddViewbtn';
+import Footer from '../../components/Footer/Footer';
 
 export const HomeAdmin = () => {
 
@@ -25,7 +26,7 @@ export const HomeAdmin = () => {
           <Heroadmin />
           <AddViewbtn setShowView={setShowView} />
           {showView ? <ViewProject /> : <AddProject />}
-
+          <Footer />
         </Box>
       </Box >
 
