@@ -21,7 +21,7 @@ export const HomeAdmin = () => {
     <>
       <Box className='HomeAdmin' height={'100vh'} overflow={'hidden'} >
         <Adminnav />
-        <Box sx={styles.scrollbar} style={{ overflowY: 'scroll', height: 'calc(100% - 100px)' }}>
+        <Box sx={styles.scrollbar} style={{ overflowY: 'scroll', height: 'calc(100% - 68px)' }}>
           <Heroadmin />
           <AddViewbtn setShowView={setShowView} />
           {showView ? <ViewProject /> : <AddProject />}
