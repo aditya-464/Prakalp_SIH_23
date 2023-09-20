@@ -6,10 +6,12 @@ import { FaEye } from "react-icons/fa";
 
 export default function Largebtn() {
   const [button, setButton] = useState("btn1");
-  const handleLeftBtn = () => {
+  const handleLeftBtn = (e) => {
+    e.preventDefault();
     setButton("btn1");
   };
-  const handleRightBtn = () => {
+  const handleRightBtn = (e) => {
+    e.preventDefault();
     setButton("btn2");
   };
   return (
@@ -32,13 +34,13 @@ export default function Largebtn() {
             <AddIcon
               style={{
                 stroke: button === "btn1" ? "white" : "black",
-                strokeWidth: "1",
+                strokeWidth: "2",
               }}
             />
           }
           size={"lg"}
           className={styles.leftBtn}
-          onClick={handleLeftBtn}
+          onClick={(e)=>handleLeftBtn(e)}
           id="btn1"
         >
           <Text mx={5}>Add</Text>
@@ -49,7 +51,7 @@ export default function Largebtn() {
           leftIcon={<FaEye size={25} />}
           size={"lg"}
           className={styles.rightBtn}
-          onClick={handleRightBtn}
+          onClick={(e)=>handleRightBtn(e)}
           id="btn2"
           color={button === "btn2" ? "white" : "black"}
         >

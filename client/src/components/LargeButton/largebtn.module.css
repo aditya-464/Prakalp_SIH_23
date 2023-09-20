@@ -14,6 +14,7 @@
   outline: none !important;
   position: relative;
   text-align: center;
+  -webkit-tap-highlight-color: transparent !important;
 }
 .leftBtn:hover,
 .rightBtn:hover {
