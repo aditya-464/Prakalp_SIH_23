@@ -29,7 +29,7 @@ export default function Largebtn(props) {
         <Button onClick={(e) => {
           e.preventDefault();
           handleLeftBtn();
-          props.setShowView(false);
+          props.setShowView(prev => !prev);
         }}
           _focus={{ outline: 'none' }}
 
@@ -52,7 +52,7 @@ export default function Largebtn(props) {
         <Button onClick={(e) => {
           e.preventDefault();
           handleRightBtn();
-          props.setShowView(true);
+          props.setShowView(prev => !prev);
         }}
           _focus={{ outline: 'none' }}
           bg={"prakalp.0"}
