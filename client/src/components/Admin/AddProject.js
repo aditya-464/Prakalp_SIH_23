@@ -9,10 +9,10 @@ export const AddProject = () => {
                 <SimpleGrid columns={2} columnGap={100} rowGap={10} >
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Course
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
                                 <option value='option3'>Option 3</option>
@@ -22,10 +22,10 @@ export const AddProject = () => {
 
                     <GridItem colSpan={1} colEnd={'3'} >
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Stream
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Computer Science</option>
                                 <option value='option2'>Electronics and Communication Engineering</option>
                                 <option value='option3'>Information Technology</option>
@@ -36,10 +36,10 @@ export const AddProject = () => {
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Project Type
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Individual Project</option>
                                 <option value='option2'>Group Project</option>
                             </Select>
@@ -48,10 +48,10 @@ export const AddProject = () => {
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Year
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>1st Year</option>
                                 <option value='option2'>2nd Year</option>
                                 <option value='option3'>3rd Year</option>
@@ -62,46 +62,46 @@ export const AddProject = () => {
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Student Name
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'} />
+                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 University Roll
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'} />
+                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Title
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'} />
+                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
                     <GridItem colSpan={1}>
                         <FormControl >
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Link
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'} />
+                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
                     <GridItem colSpan={1}>
-                        <FormControl >
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                        <FormControl isRequired>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Description
                             </FormLabel>
-                            <Textarea h={'10rem'} placeholder='Type Description' bg={'gray.200'} variant={'Unstyled'} fontSize={'1.25rem'} resize={'none'}
+                            <Textarea h={'12rem'} placeholder='Type Description' bg={'gray.200'} variant={'Unstyled'} fontSize={'1.5rem'} resize={'none'}
                                 sx={{
                                     '&::-webkit-scrollbar': {
                                         display: 'none'
@@ -111,14 +111,14 @@ export const AddProject = () => {
                     </GridItem>
 
                     <GridItem colSpan={1}>
-                        <FormControl >
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                        <FormControl isRequired>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Select file(s)
                             </FormLabel>
                             <Input type='file' id="file"
                                 style={{ display: "none" }} />
                             <label htmlFor='file'>
-                                <Box h={'10rem'} p={'5px 10px'} fontSize={'1.25rem'} borderRadius={'0.375rem'} style={{ border: "dotted 1px gray" }}  >
+                                <Box h={'12rem'} p={'5px 10px'} fontSize={'1.5rem'} borderRadius={'0.375rem'} style={{ border: "dotted 1px gray" }}  >
                                     Select or drag file
                                 </Box>
                             </label>
@@ -127,7 +127,7 @@ export const AddProject = () => {
 
                 </SimpleGrid>
                 <HStack my={'5rem'} justify={'flex-end'}  >
-                    <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.25rem'} variant={'solid'} background={'prakalp.1'} >PUBLISH</Button>
+                    <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.5rem'} variant={'solid'} background={'prakalp.1'} >PUBLISH</Button>
                 </HStack >
             </Box>
         </>

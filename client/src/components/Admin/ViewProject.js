@@ -9,19 +9,19 @@ export const ViewProject = () => {
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Title
                             </FormLabel>
-                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'} />
+                            <Input placeholder='Type' bg={'gray.200'} variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'} />
                         </FormControl>
                     </GridItem>
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Course
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
                                 <option value='option3'>Option 3</option>
@@ -31,10 +31,10 @@ export const ViewProject = () => {
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Stream
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option1'>Computer Science</option>
                                 <option value='option2'>Electronics and Communication Engineering</option>
                                 <option value='option3'>Information Technology</option>
@@ -44,10 +44,10 @@ export const ViewProject = () => {
 
                     <GridItem colSpan={1}>
                         <FormControl isRequired>
-                            <FormLabel fontSize={'2xl'} fontWeight={'bold'}>
+                            <FormLabel fontSize={'3xl'} fontWeight={'bold'}>
                                 Year
                             </FormLabel>
-                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'4rem'} fontSize={'1.25rem'}>
+                            <Select bg={'gray.200'} placeholder='Select' variant={'Unstyled'} height={'5rem'} fontSize={'1.5rem'}>
                                 <option value='option0'>All</option>
                                 <option value='option1'>1st Year</option>
                                 <option value='option2'>2nd Year</option>
@@ -59,7 +59,7 @@ export const ViewProject = () => {
 
                 </SimpleGrid>
                 <HStack my={'5rem'} justify={'flex-end'}  >
-                    <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.25rem'} variant={'solid'} background={'prakalp.1'} >Search</Button>
+                    <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.5rem'} variant={'solid'} background={'prakalp.1'} >Search</Button>
                 </HStack >
             </Box>
         </>
