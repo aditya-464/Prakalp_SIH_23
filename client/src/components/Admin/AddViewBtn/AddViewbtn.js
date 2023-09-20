@@ -3,10 +3,8 @@ import styles from "./addviewbtn.module.css";
 import { Button, ButtonGroup, Flex, Text } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 import { FaEye } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
 
 export default function Largebtn(props) {
-  const navigate = useNavigate();
 
   const [button, setButton] = useState("btn1");
   const handleLeftBtn = () => {
@@ -31,7 +29,7 @@ export default function Largebtn(props) {
         <Button onClick={(e) => {
           e.preventDefault();
           handleLeftBtn();
-          props.setShowView(false);
+          props.setShowView(prev => !prev);
         }}
           bg={"prakalp.0"}
           color={button === "btn1" ? "white" : "black"}
@@ -50,9 +48,8 @@ export default function Largebtn(props) {
           <Text mx={5}>Add</Text>
         </Button>
         <Button onClick={() => {
-          navigate("/viewProject");
           handleRightBtn();
-          props.setShowView(true);
+          props.setShowView(prev => !prev);
         }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
