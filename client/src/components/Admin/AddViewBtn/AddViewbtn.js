@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./largebtn.module.css";
+import styles from "./addviewbtn.module.css";
 import { Button, ButtonGroup, Flex, Text } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 import { FaEye } from "react-icons/fa";
