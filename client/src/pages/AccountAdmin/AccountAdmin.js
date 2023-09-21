@@ -5,7 +5,6 @@ import { Logout } from '../../components/Admin/Logout/Logout';
 import { Box } from '@chakra-ui/react';
 import { Profile } from '../../components/Admin/Profile/Profile';
 import ProfileLogoutBtn from '../../components/Admin/ProfileLogoutBtn/ProfileLogoutBtn';
-import Footer from '../../components/Footer/Footer';
 
 export const AccountAdmin = () => {
 
@@ -26,7 +25,6 @@ export const AccountAdmin = () => {
           <Heroadmin />
           <ProfileLogoutBtn setLogout={setLogout}/>
           {logout ? <Logout/> : <Profile />}
-          <Footer />
         </Box>
       </Box >
     </>

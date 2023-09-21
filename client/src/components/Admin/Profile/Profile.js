@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../../Footer/Footer"
 import {
   Box,
   FormControl,
@@ -199,8 +200,7 @@ export const Profile = () => {
                   h={"22rem"}
                   p={"5px 10px"}
                   fontSize={"1.5rem"}
-                  borderRadius={"0.375rem"}
-                  style={{ border: "dotted 2px gray" }}
+                  style={{ border: "dotted 2px gray", borderRadius: "15px" }}
                   alignItems={"center"}
                   justifyContent={"center"}
                 >
@@ -260,6 +260,7 @@ export const Profile = () => {
           </Button>
         </HStack>
       </Box>
+      <Footer />
     </>
   );
 };

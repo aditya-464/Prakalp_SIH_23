@@ -27,6 +27,7 @@ export const ViewProject = () => {
                 variant={"Unstyled"}
                 height={"5rem"}
                 fontSize={"1.5rem"}
+                style={{ borderRadius: "7px" }}
               />
             </FormControl>
           </GridItem>
@@ -42,6 +43,7 @@ export const ViewProject = () => {
                 variant={"Unstyled"}
                 height={"5rem"}
                 fontSize={"1.5rem"}
+                style={{ borderRadius: "7px" }}
               >
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
@@ -61,6 +63,7 @@ export const ViewProject = () => {
                 variant={"Unstyled"}
                 height={"5rem"}
                 fontSize={"1.5rem"}
+                style={{ borderRadius: "7px" }}
               >
                 <option value="option1">Computer Science</option>
                 <option value="option2">
@@ -82,6 +85,7 @@ export const ViewProject = () => {
                 variant={"Unstyled"}
                 height={"5rem"}
                 fontSize={"1.5rem"}
+                style={{ borderRadius: "7px" }}
               >
                 <option value="option0">All</option>
                 <option value="option1">1st Year</option>

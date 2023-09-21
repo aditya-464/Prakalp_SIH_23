@@ -1,11 +1,12 @@
 import React from "react";
 import { Text, VStack, HStack, Button } from "@chakra-ui/react";
+import Footer from "../../Footer/Footer"
 import styles from "./logout.module.css";
 
 export const Logout = () => {
   return (
     <>
-      <VStack textAlign={"center"} minH={"190px"}>
+      <VStack textAlign={"center"} minH={"49vh"}>
         <Text fontSize={"2rem"} className={styles.logoutText} my={"20px"}>
           Are you certain, you want to logout ?
         </Text>
@@ -29,6 +30,7 @@ export const Logout = () => {
           </Button>
         </HStack>
       </VStack>
+      <Footer />
     </>
   );
 };
