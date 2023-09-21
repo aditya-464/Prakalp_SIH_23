@@ -127,7 +127,7 @@ export const AddProject = () => {
 
                 </SimpleGrid>
                 <HStack my={'5rem'} justify={'flex-end'}  >
-                    <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} colorScheme='whatsapp' fontSize={'1.5rem'} variant={'solid'} background={'prakalp.1'} >PUBLISH</Button>
+                    <Button py={'2rem'} px={'4rem'} letterSpacing={'2px'} borderRadius={'20px'} _hover={{bg: 'prakalp.6'}} fontSize={'1.5rem'} variant={'solid'} background={'prakalp.1'} color={'white'}>PUBLISH</Button>
                 </HStack >
             </Box>
         </>

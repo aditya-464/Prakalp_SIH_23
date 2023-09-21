@@ -1,0 +1,19 @@
+.logoutText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.logoutbtn {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white !important;
+    padding: 25px 50px !important;
+    border-radius: 30px !important;
+}
+.outlineBtn {
+    color: #03C988 !important;
+}
+.outlineBtn:hover {
+    color: white !important;
+    border: 1px solid black !important;
+}

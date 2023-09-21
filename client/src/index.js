@@ -15,6 +15,7 @@ const theme = extendTheme({
       3: "#FF4162", // pink color
       4: "#FAFF00", // yellow color
       5: "#404040", // footer black color
+      6: "rgba(0, 0, 0, 0.8)" //button hover color
     }
   },
   fonts: {
