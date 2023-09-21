@@ -6,7 +6,7 @@ import styles from "./logout.module.css";
 export const Logout = () => {
   return (
     <>
-      <VStack textAlign={"center"} minH={"49vh"}>
+      <VStack textAlign={"center"} minH={"51vh"}>
         <Text fontSize={"2rem"} className={styles.logoutText} my={"20px"}>
           Are you certain, you want to logout ?
         </Text>
