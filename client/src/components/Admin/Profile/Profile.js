@@ -183,7 +183,7 @@ export const Profile = () => {
           </GridItem>
         </SimpleGrid>
         <Flex justifyContent={"space-between"} my={"30px"}>
-          <Box minW={"470px"}>
+          <Box minW={"47rem"}>
             <FormControl isRequired>
               <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={'20px'}>
                 Insignia
@@ -198,6 +198,7 @@ export const Profile = () => {
               <label htmlFor="file">
                 <Flex
                   h={"23.5rem"}
+                  w={'100%'}
                   p={"5px 10px"}
                   fontSize={"1.5rem"}
                   style={{ border: "dotted 2px gray", borderRadius: "15px" }}
@@ -209,7 +210,7 @@ export const Profile = () => {
               </label>
             </FormControl>
           </Box>
-          <VStack minW={"470px"} spacing={"30px"}>
+          <VStack minW={"47rem"} spacing={"30px"}>
             <FormControl isRequired>
               <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={'20px'}>
                 Official website link

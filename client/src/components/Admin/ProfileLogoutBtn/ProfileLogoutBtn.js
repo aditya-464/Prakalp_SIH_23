@@ -29,7 +29,7 @@ export default function Largebtn(props) {
         <Button onClick={(e) => {
           e.preventDefault();
           handleLeftBtn();
-          props.setLogout(prev => !prev);
+          props.setLogout(false);
         }}
           bg={"prakalp.0"}
           color={button === "btn1" ? "white" : "black"}
@@ -49,7 +49,7 @@ export default function Largebtn(props) {
         </Button>
         <Button onClick={() => {
           handleRightBtn();
-          props.setLogout(prev => !prev);
+          props.setLogout(true);
         }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
