@@ -197,7 +197,7 @@ export const Profile = () => {
               />
               <label htmlFor="file">
                 <Flex
-                  h={"22rem"}
+                  h={"23.5rem"}
                   p={"5px 10px"}
                   fontSize={"1.5rem"}
                   style={{ border: "dotted 2px gray", borderRadius: "15px" }}
@@ -211,7 +211,7 @@ export const Profile = () => {
           </Box>
           <VStack minW={"470px"} spacing={"30px"}>
             <FormControl isRequired>
-              <FormLabel fontSize={"3xl"} fontWeight={"bold"}>
+              <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={'20px'}>
                 Official website link
               </FormLabel>
               <Input
