@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../../Footer/Footer"
+import Footer from "../../Footer/Footer";
 import {
   Box,
   FormControl,
@@ -182,69 +182,80 @@ export const Profile = () => {
             </FormControl>
           </GridItem>
         </SimpleGrid>
-        <Flex justifyContent={"space-between"} my={"30px"}>
-          <Box minW={"47rem"}>
-            <FormControl isRequired>
-              <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={'20px'}>
-                Insignia
-              </FormLabel>
-              <Input
-                type="file"
-                id="file"
-                accept="image/png, image/jpeg"
-                style={{ display: "none", borderRadius: "7px" }}
-                onChange={onSelectFile}
-              />
-              <label htmlFor="file">
-                <Flex
-                  h={"23.5rem"}
-                  w={'100%'}
-                  p={"5px 10px"}
+        <SimpleGrid columns={2} columnGap={100} rowGap={10} my={'30px'}>
+          <GridItem colSpan={1}>
+            <Box>
+              <FormControl isRequired>
+                <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={"20px"}>
+                  Insignia
+                </FormLabel>
+                <Input
+                  type="file"
+                  id="file"
+                  accept="image/png, image/jpeg"
+                  style={{ display: "none", borderRadius: "7px" }}
+                  onChange={onSelectFile}
+                />
+                <label htmlFor="file">
+                  <Flex
+                    h={"23.5rem"}
+                    w={"100%"}
+                    p={"5px 10px"}
+                    fontSize={"1.5rem"}
+                    style={{ border: "dotted 2px gray", borderRadius: "15px" }}
+                    alignItems={"center"}
+                    justifyContent={"center"}
+                  >
+                    {(selectedFile && (
+                      <img
+                        src={preview}
+                        style={{ maxHeight: "200px" }}
+                        alt="uploaded!"
+                      />
+                    )) ||
+                      "Select or Drag Image"}
+                  </Flex>
+                </label>
+              </FormControl>
+            </Box>
+          </GridItem>
+          <GridItem colSpan={1}>
+            <VStack spacing={"30px"}>
+              <FormControl isRequired>
+                <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={"20px"}>
+                  Official website link
+                </FormLabel>
+                <Input
+                  placeholder="Type"
+                  bg={"prakalp.2"}
+                  variant={"Unstyled"}
+                  height={"5rem"}
                   fontSize={"1.5rem"}
-                  style={{ border: "dotted 2px gray", borderRadius: "15px" }}
-                  alignItems={"center"}
-                  justifyContent={"center"}
-                >
-                  {(selectedFile && <img src={preview} style={{maxHeight: "200px"}} alt="uploaded!"/>) || "Select or Drag Image"}
-                </Flex>
-              </label>
-            </FormControl>
-          </Box>
-          <VStack minW={"47rem"} spacing={"30px"}>
-            <FormControl isRequired>
-              <FormLabel fontSize={"3xl"} fontWeight={"bold"} mb={'20px'}>
-                Official website link
-              </FormLabel>
-              <Input
-                placeholder="Type"
-                bg={"prakalp.2"}
-                variant={"Unstyled"}
-                height={"5rem"}
-                fontSize={"1.5rem"}
-                style={{ borderRadius: "7px" }}
-              />
-            </FormControl>
-            <FormControl isRequired>
-              <FormLabel fontSize={"3xl"} fontWeight={"bold"}>
-                Bio
-              </FormLabel>
-              <Textarea
-                h={"12rem"}
-                placeholder="Type Bio"
-                bg={"prakalp.2"}
-                variant={"Unstyled"}
-                fontSize={"1.5rem"}
-                resize={"none"}
-                sx={{
-                  "&::-webkit-scrollbar": {
-                    display: "none",
-                  },
-                }}
-                style={{ borderRadius: "7px" }}
-              />
-            </FormControl>
-          </VStack>
-        </Flex>
+                  style={{ borderRadius: "7px" }}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel fontSize={"3xl"} fontWeight={"bold"}>
+                  Bio
+                </FormLabel>
+                <Textarea
+                  h={"12rem"}
+                  placeholder="Type Bio"
+                  bg={"prakalp.2"}
+                  variant={"Unstyled"}
+                  fontSize={"1.5rem"}
+                  resize={"none"}
+                  sx={{
+                    "&::-webkit-scrollbar": {
+                      display: "none",
+                    },
+                  }}
+                  style={{ borderRadius: "7px" }}
+                />
+              </FormControl>
+            </VStack>
+          </GridItem>
+        </SimpleGrid>
         <HStack my={"5rem"} justify={"flex-end"}>
           <Button
             py={"2rem"}
