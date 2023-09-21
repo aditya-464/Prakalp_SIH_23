@@ -46,7 +46,7 @@ export default function Largebtn(props) {
         <Button
           onClick={(e) => {
             handleBtn(e);
-            props.setShowView(true);
+            props.setShowView('following');
           }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
@@ -61,7 +61,7 @@ export default function Largebtn(props) {
         <Button
           onClick={(e) => {
             handleBtn(e);
-            props.setShowView(true);
+            props.setShowView('bookmarks');
           }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
@@ -76,7 +76,7 @@ export default function Largebtn(props) {
         <Button
           onClick={(e) => {
             handleBtn(e);
-            props.setShowView(true);
+            props.setShowView('trending');
           }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
@@ -91,7 +91,7 @@ export default function Largebtn(props) {
         <Button
           onClick={(e) => {
             handleBtn(e);
-            props.setShowView(true);
+            props.setShowView('search');
           }}
           bg={"prakalp.0"}
           aria-label="Add to friends"
