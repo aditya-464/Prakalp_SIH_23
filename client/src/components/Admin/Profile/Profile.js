@@ -17,6 +17,7 @@ import {
   InputLeftAddon,
   InputRightAddon,
   VStack,
+  Tooltip
 } from "@chakra-ui/react";
 import { PiEyeBold } from "react-icons/pi";
 import { PiEyeClosedBold } from "react-icons/pi";
@@ -168,21 +169,27 @@ export const Profile = () => {
                   fontSize={"1.5rem"}
                   style={{ borderRadius: "7px 0 0 7px" }}
                 />
-                <InputRightAddon
-                  variant={"Unstyled"}
-                  bg={"prakalp.2"}
-                  children={show ? <PiEyeBold /> : <PiEyeClosedBold />}
-                  fontSize={"2rem"}
-                  cursor={"pointer"}
-                  height={"5rem"}
-                  style={{ borderRadius: "0 7px 7px 0" }}
-                  onClick={handleClick}
-                />
+                <Tooltip
+                  label={show ? "Hide Password" : "Show Password"}
+                  fontSize="xl"
+                  placement="top-end"
+                >
+                  <InputRightAddon
+                    variant={"Unstyled"}
+                    bg={"prakalp.2"}
+                    children={show ? <PiEyeBold /> : <PiEyeClosedBold />}
+                    fontSize={"2rem"}
+                    cursor={"pointer"}
+                    height={"5rem"}
+                    style={{ borderRadius: "0 7px 7px 0" }}
+                    onClick={handleClick}
+                  />
+                </Tooltip>
               </InputGroup>
             </FormControl>
           </GridItem>
         </SimpleGrid>
-        <SimpleGrid columns={2} columnGap={100} rowGap={10} my={'30px'}>
+        <SimpleGrid columns={2} columnGap={100} rowGap={10} my={"30px"}>
           <GridItem colSpan={1}>
             <Box>
               <FormControl isRequired>
