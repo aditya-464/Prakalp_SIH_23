@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Usernav from "../../components/User/UserNav/Usernav";
 import Herouser from '../../components/User/HeroUser/Herouser';
 import { Box } from '@chakra-ui/react';
-import { ViewProject } from '../../components/Admin/ViewProject/ViewProject';
 import HomeBtnGroup from '../../components/User/HomeBtnGroup/HomeBtnGroup';
 import Footer from '../../components/Footer/Footer';
 import Following from '../../components/User/Following/Following';

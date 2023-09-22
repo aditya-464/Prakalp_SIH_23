@@ -6,6 +6,7 @@ import { HomeAdmin } from "./pages/HomeAdmin/HomeAdmin";
 import { HomeUser } from "./pages/HomeUser/HomeUser";
 import { AccountAdmin } from "./pages/AccountAdmin/AccountAdmin";
 import { AccountUser } from "./pages/AccountUser/AccountUser";
+import { Workspace } from "./pages/Workspace/Workspace";
 import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 import Herouser from "./components/User/HeroUser/Herouser";
 
@@ -30,6 +31,7 @@ function App() {
        <Routes>
         <Route path='/' element={<HomeUser/>}/>
         <Route path='account' element={<AccountUser />}/>
+        <Route path='workspace' element={<Workspace/>}/>
       </Routes>
     </>
   );
