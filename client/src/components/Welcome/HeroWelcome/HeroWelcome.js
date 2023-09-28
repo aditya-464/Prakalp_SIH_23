@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./herowelcome.module.css";
-import { Box, Text, Flex, Image } from '@chakra-ui/react'
+import { Box, Text, Flex, Image, VStack } from '@chakra-ui/react'
 
 import welcome1 from '../../../assets/images/welcome1.jpg'
 import welcome2 from '../../../assets/images/welcome2.jpg'
@@ -12,14 +12,14 @@ export default function HeroWelcome() {
   return (
     <>
       {/* header */}
-      <Flex pl={65} pt={8} pb={8}
+      <Flex pl={65} pt={8} pb={8} m={0}
         justifyContent={"space-between"}
         alignItems={"center"}
         className={styles.heroBackground} >
 
         <Box width={"33.33%"}>
           <Text
-            fontSize={"6xl"}
+            fontSize={"7xl"}
             color={"white"}
             className={styles.heroHeadText}
             pb={8}
@@ -27,19 +27,19 @@ export default function HeroWelcome() {
             Prakalp
           </Text>
 
-          <Text fontSize={'2xl'} color={'white'} className={styles.heroParaText}>Initiative by the Government of Jharkhand to provide centralized platform for submission of projects across all institutions in India. </Text>
+          <Text fontSize={'3xl'} color={'white'} className={styles.heroParaText}>Initiative by the Government of Jharkhand to provide centralized platform for submission of projects across all institutions in India. </Text>
         </Box>
 
-        <Box mr={85} >
-          <Image src={img} width={"180px"} />
-        </Box>
+        <Flex flexDirection={"row-reverse"} mr={85}>
+          <Image src={img} width={"33%"}/>
+        </Flex>
 
       </Flex>
 
       {/* 1st row */}
-      <Flex ml={65} mt={100} mr={65} mb={100}  justifyContent={"space-between"} >
+      <Flex ml={65} mt={100} mr={65} mb={100} justifyContent={"space-between"} >
 
-        <Box w={"40%"} h={""}  pl={20}>
+        <Box w={"40%"} h={""} pl={20}>
           <Text
             fontSize={"6xl"}
             fontWeight={"bold"}
@@ -50,7 +50,7 @@ export default function HeroWelcome() {
             Centralized Platform for Project submission
           </Text>
 
-          <Text fontSize={'2xl'}
+          <Text fontSize={'3xl'}
             className={styles.heroParaText}
           >
             Projects can be categorized under various levels and easily stored in pdf format along with proper documentation
@@ -67,7 +67,7 @@ export default function HeroWelcome() {
       {/* 2nd row */}
       <Flex m={65} justifyContent={"space-between"}>
 
-      <Box w={"35%"} ml={65} >
+        <Box w={"35%"} ml={65} >
           <Image src={welcome2} width={"100%"} />
         </Box>
 
@@ -83,16 +83,16 @@ export default function HeroWelcome() {
             Multi-level Plagiarism Detection
           </Text>
 
-          <Text fontSize={'2xl'}
+          <Text fontSize={'3xl'}
             className={styles.heroParaText}
             textAlign={"right"}
           >
-           For every project, Level 1 plagiarism check is done within the system database and Level 2 check is done throughout the internet.
+            For every project, Level 1 plagiarism check is done within the system database and Level 2 check is done throughout the internet.
           </Text>
 
         </Box>
 
-       
+
 
       </Flex>
 
@@ -107,10 +107,10 @@ export default function HeroWelcome() {
             className={styles.heroHeadText}
             pb={8}
           >
-           Personalized Projects Recommendation
+            Personalized Projects Recommendation
           </Text>
 
-          <Text fontSize={'2xl'}
+          <Text fontSize={'3xl'}
             className={styles.heroParaText}
           >
             Using Artificial Intelligence(AI), viewers will be suggested projects in their feed section based on their search activity and past history.

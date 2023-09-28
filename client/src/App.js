@@ -9,16 +9,15 @@ import About from "./components/About/About";
 function App() {
   return (
     <>
-      {/* <Navwelcome /> */}
-      {/* <HeroWelcome/> */}
+      <Navwelcome />
+      <HeroWelcome/>
       <About/>
-
       {/* <Usernav/> */}
       {/* <Herouser/>  */}
 
 
       {/* * <Adminnav /> */}
-      {/*<Heroadmin/> */}
+      {/* <Heroadmin/> */}
       
     </>
   );
