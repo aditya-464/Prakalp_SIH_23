@@ -1,29 +1,23 @@
 import React from 'react';
 import styles from './loginpopup.module.css'
-import { Box, Button, Flex, Text } from '@chakra-ui/react'
+import { Button,VStack, Text, HStack } from '@chakra-ui/react'
 
 
-export default function LoginPopUp() {
+export default function LoginPopUp({title}) {
     return (
-        <Flex
-            alignItems={"center"}
-            justifyContent={"center"}
-            direction={"column"}
-            className={styles.container}>
-
-            <Box className={styles.btnContainer} >
+            <VStack p={15}>
                 <Text
 
                     fontSize={"6xl"}
+                    fontWeight={"bold"}
                     textAlign={"center"}
                     p={"1rem"}
                     mb={"2.5rem"}
                 >
-                    LOGIN & 
+                    {title}
                 </Text>
 
-                <Flex w={"100%"} justifyContent={"center"} gap={2}>
-
+                <HStack>
                     <Button
                         className={`${styles.asAdminbtn} ${styles.outlineBtn}`}
                         bg={"prakalp.0"}
@@ -31,7 +25,7 @@ export default function LoginPopUp() {
                         mx={"10px"}
                         _hover={{ bg: "prakalp.6" }}
                     >
-                        <Text fontSize={'1.5rem'}>As Viewer</Text>
+                        <Text fontSize={'2rem'}>As Viewer</Text>
                     </Button>
 
                     <Button
@@ -39,9 +33,9 @@ export default function LoginPopUp() {
                         bg={"prakalp.1"}
                         mx={"10px"}
                         _hover={{ bg: "prakalp.6" }}>
-                        <Text fontSize={'1.5rem'}>As Admin</Text></Button>
-                </Flex>
-            </Box>
-        </Flex>
+                        <Text fontSize={'2rem'}>As Admin</Text></Button>
+                </HStack>
+            </VStack>
+        
     )
 }
