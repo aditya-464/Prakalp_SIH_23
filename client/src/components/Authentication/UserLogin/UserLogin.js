@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {
     Flex,
@@ -16,7 +15,7 @@ import {
 
 
 
-export default function AdminLogin() {
+export default function UserLogin() {
   
     return (
         <Flex
@@ -53,16 +52,7 @@ export default function AdminLogin() {
                             backgroundColor="whiteAlpha.900"
                             fontSize={"2rem"}
                         >
-                            <FormControl isRequired>
-                                <FormLabel fontSize={'2xl'}>AISHE Code</FormLabel>
-                                <Input
-                                    fontSize={'1.5rem'}
-                                    height={'5rem'}
-                                    bg={'prakalp.2'}
-                                    type="text"
-                                    placeholder="AISHE code of institute" />
-                            </FormControl>
-                            
+
                             <FormControl isRequired>
                                 <FormLabel fontSize={'2xl'}>Username</FormLabel>
                                 <Input
@@ -72,6 +62,7 @@ export default function AdminLogin() {
                                     type="text"
                                     placeholder="Username" />
                             </FormControl>
+
 
                             <FormControl isRequired mb={5}>
                                 <FormLabel fontSize={'2xl'}>Password</FormLabel>
@@ -110,7 +101,7 @@ export default function AdminLogin() {
             <Box fontSize={"2xl"} mt={4}>
                 Don't have an account ?{" "}
                 <Link color="prakalp.1" href="#" fontWeight={'bold'}>
-                    Signup
+                    Sign Up
                 </Link>
             </Box>
 

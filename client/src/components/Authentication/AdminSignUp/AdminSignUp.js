@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {
     Flex,
@@ -16,7 +15,7 @@ import {
 
 
 
-export default function AdminLogin() {
+export default function AdminSignUp() {
   
     return (
         <Flex
@@ -43,7 +42,7 @@ export default function AdminLogin() {
                         textAlign={"center"}
                         mt="5"
                     >
-                        Login
+                        Signup
                     </Heading>
 
                     <form>
@@ -61,6 +60,26 @@ export default function AdminLogin() {
                                     bg={'prakalp.2'}
                                     type="text"
                                     placeholder="AISHE code of institute" />
+                            </FormControl>
+
+                            <FormControl isRequired>
+                                <FormLabel fontSize={'2xl'}>Institute name</FormLabel>
+                                <Input
+                                    fontSize={'1.5rem'}
+                                    height={'5rem'}
+                                    bg={'prakalp.2'}
+                                    type="text"
+                                    placeholder="Institute name" />
+                            </FormControl>
+
+                            <FormControl isRequired>
+                                <FormLabel fontSize={'2xl'}>E-mail</FormLabel>
+                                <Input
+                                    fontSize={'1.5rem'}
+                                    height={'5rem'}
+                                    bg={'prakalp.2'}
+                                    type="email"
+                                    placeholder="E-mail" />
                             </FormControl>
                             
                             <FormControl isRequired>
@@ -108,9 +127,9 @@ export default function AdminLogin() {
             </Stack>
 
             <Box fontSize={"2xl"} mt={4}>
-                Don't have an account ?{" "}
+                Already have an account ?{" "}
                 <Link color="prakalp.1" href="#" fontWeight={'bold'}>
-                    Signup
+                    Login
                 </Link>
             </Box>
 

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {
     Flex,
@@ -16,7 +15,7 @@ import {
 
 
 
-export default function AdminLogin() {
+export default function UserSignUp() {
   
     return (
         <Flex
@@ -43,7 +42,7 @@ export default function AdminLogin() {
                         textAlign={"center"}
                         mt="5"
                     >
-                        Login
+                        Signup
                     </Heading>
 
                     <form>
@@ -54,15 +53,26 @@ export default function AdminLogin() {
                             fontSize={"2rem"}
                         >
                             <FormControl isRequired>
-                                <FormLabel fontSize={'2xl'}>AISHE Code</FormLabel>
+                                <FormLabel fontSize={'2xl'}>Full Name</FormLabel>
                                 <Input
                                     fontSize={'1.5rem'}
                                     height={'5rem'}
                                     bg={'prakalp.2'}
                                     type="text"
-                                    placeholder="AISHE code of institute" />
+                                    placeholder="Full name" />
                             </FormControl>
+
                             
+                            <FormControl isRequired>
+                                <FormLabel fontSize={'2xl'}>E-mail</FormLabel>
+                                <Input
+                                    fontSize={'1.5rem'}
+                                    height={'5rem'}
+                                    bg={'prakalp.2'}
+                                    type="email"
+                                    placeholder="E-mail" />
+                            </FormControl>
+
                             <FormControl isRequired>
                                 <FormLabel fontSize={'2xl'}>Username</FormLabel>
                                 <Input
@@ -72,6 +82,7 @@ export default function AdminLogin() {
                                     type="text"
                                     placeholder="Username" />
                             </FormControl>
+
 
                             <FormControl isRequired mb={5}>
                                 <FormLabel fontSize={'2xl'}>Password</FormLabel>
@@ -108,9 +119,9 @@ export default function AdminLogin() {
             </Stack>
 
             <Box fontSize={"2xl"} mt={4}>
-                Don't have an account ?{" "}
+                Already have an account ?{" "}
                 <Link color="prakalp.1" href="#" fontWeight={'bold'}>
-                    Signup
+                    Login
                 </Link>
             </Box>
 

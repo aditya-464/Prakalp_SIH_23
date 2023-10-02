@@ -6,6 +6,10 @@ import Herouser from "./components/User/HeroUser/Herouser";
 import HeroWelcome from "./components/Welcome/HeroWelcome/HeroWelcome";
 import About from "./components/About/About";
 import AdminLogin from "./components/Authentication/AdminLogin/AdminLogin";
+import AdminSignUp from "./components/Authentication/AdminSignUp/AdminSignUp";
+import UserLogin from "./components/Authentication/UserLogin/UserLogin";
+import GetOTP from "./components/Authentication/GetOTP/GetOTP";
+import UserSignUp from "./components/Authentication/UserSignUp/UserSignUp";
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
       {/* * <Adminnav /> */}
       {/* <Heroadmin/> */}
       <AdminLogin/>
+      <AdminSignUp/>
+      <UserLogin/>
+      <UserSignUp/>
+      <GetOTP/>
     </>
   );
 }
