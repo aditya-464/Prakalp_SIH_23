@@ -5,20 +5,22 @@ import Heroadmin from "./components/Admin/HeroAdmin/Heroadmin";
 import Herouser from "./components/User/HeroUser/Herouser";
 import HeroWelcome from "./components/Welcome/HeroWelcome/HeroWelcome";
 import About from "./components/About/About";
+import AdminLogin from "./components/Authentication/AdminLogin/AdminLogin";
 
 function App() {
   return (
     <>
-      <Navwelcome />
-      <HeroWelcome/>
-      <About/>
+      {/* <Navwelcome />
+      <HeroWelcome/> */}
+      {/* <About/> */}
+
       {/* <Usernav/> */}
       {/* <Herouser/>  */}
 
 
       {/* * <Adminnav /> */}
       {/* <Heroadmin/> */}
-      
+      <AdminLogin/>
     </>
   );
 }
